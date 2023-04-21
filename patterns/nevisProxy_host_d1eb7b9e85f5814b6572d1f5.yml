@@ -1,0 +1,10 @@
+schemaVersion: "1.0"
+pattern:
+  id: "d1eb7b9e85f5814b6572d1f5"
+  className: "ch.nevis.admin.v4.plugin.nevisproxy.patterns.HostContext"
+  name: "nevisProxy host"
+  properties:
+    proxy:
+    - "pattern://580e329346696ce9387c5d75"
+    addresses: "https://172.188.1.103"
+    listen: "https://nomura-mfa-adn-dev1-truc:443"
