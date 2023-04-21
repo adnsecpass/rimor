@@ -1,0 +1,17 @@
+schemaVersion: 1
+
+hosts:
+- truc-vm:
+    vars:
+      __connection_host: 172.188.1.103
+      __connection_port: 22
+      __connection_user: azureuser
+      __connection_password: secret://47002f431b972df8c74df351
+
+groups:
+- proxies:
+    members:
+      - truc-vm
+
+vars:
+  __nevisadmin_pki_automatic_enabled: true
