@@ -7,11 +7,29 @@ hosts:
       __connection_port: 22
       __connection_user: azureuser
       __connection_password: secret://47002f431b972df8c74df351
-
-groups:
-- proxies:
-    members:
-      - truc-vm
+- localhost:
+    vars:
+      __connection_host: 172.188.1.103
+      __connection_port: 22
+      __connection_user: azureuser
+      __connection_password: secret://47002f431b972df8c74df351
 
 vars:
   __nevisadmin_pki_automatic_enabled: true
+  # mock IC
+  protected_address: https://f59414e5-1019-4acd-9233-7e5581f3c316.mock.pstmn.io/authorize/resource/
+  protected_path: /authorize/resource/
+  nevisidm_database_host: localhost
+  nevisidm_encryption_key: secret://f91398a5d982c62d823ddc16
+  nevisidm_database_tech_user_password: secret://31287015368d001ac2cf8606
+  nevis_sectoken_private_enc_key: secret://564907d1498120d3817f9d6f
+  nevis_sectoken_ec_keystore:
+    - inv-res://982aeb1d0029fa830967f2009f35fb05#cert.pem
+    - inv-res://d368a00e72848726f53da36777850106#key.pem
+  nevis_sectoken_ec_truststore:
+    - inv-res://982aeb1d0029fa830967f2009f35fb05#cert.pem
+  nevis_sectoken_rsa_keystore:
+    - inv-res://35f472f91378bb22491f5ee5fdaccdc6#cert.pem
+    - inv-res://428220545603174d6332a5b64c9aec6d#key.pem
+  nevis_sectoken_rsa_truststore:
+    - inv-res://931ce9bd2d533b62e333929b466eb505#cert.pem
