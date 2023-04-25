@@ -1,0 +1,16 @@
+schemaVersion: "1.0"
+pattern:
+  id: "ffc1836569a57769978f286b"
+  className: "ch.nevis.admin.v4.plugin.nevisidm.patterns.NevisIDMWebApplicationAccess"
+  name: "nevisIDM Administration GUI"
+  properties:
+    host:
+    - "pattern://d1eb7b9e85f5814b6572d1f5"
+    nevisIDM:
+    - "pattern://f6eef2f453247306197a7d53"
+    realm:
+    - "pattern://87a7b82e5cd902ae3f863289"
+    token:
+    - "pattern://7623002513db8d275138dc22"
+    addons:
+    - "pattern://61d1efa32afe42c146121b66"

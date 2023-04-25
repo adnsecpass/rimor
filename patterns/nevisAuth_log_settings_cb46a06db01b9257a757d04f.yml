@@ -1,0 +1,7 @@
+schemaVersion: "1.0"
+pattern:
+  id: "cb46a06db01b9257a757d04f"
+  className: "ch.nevis.admin.v4.plugin.nevisauth.patterns.CustomAuthLogFile"
+  name: "nevisAuth log settings"
+  properties:
+    logLevel: "INFO"

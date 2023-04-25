@@ -1,0 +1,16 @@
+schemaVersion: "1.0"
+pattern:
+  id: "f6eef2f453247306197a7d53"
+  className: "ch.nevis.admin.v4.plugin.nevisidm.patterns.NevisIDMDeployable"
+  name: "nevisIDM instance"
+  deploymentHosts: "localhost"
+  properties:
+    instanceName: "demoIdm"
+    encryptionKey: "var://nevisidm_encryption_key"
+    authSignerTrustStore:
+    - "pattern://078e6645a04132d6c39c43d3"
+    database:
+    - "pattern://cc7300c7b7c7f5723d1829e2"
+    logging:
+    - "pattern://bed69bd1e4279f842be9ee41"
+    defaultLanguage: "en"

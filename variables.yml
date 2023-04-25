@@ -1,0 +1,65 @@
+schemaVersion: "1.0"
+variables:
+  nevis_sectoken_private_enc_key:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
+    parameters:
+      minRequired: 0
+      maxAllowed: 1
+      secret: true
+    value: "sample password"
+    requireOverloading: true
+  nevis_sectoken_rsa_keystore:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.AttachmentProperty"
+    parameters:
+      minRequired: 0
+      secretPreserving: true
+    value: null
+    requireOverloading: true
+  nevis_sectoken_rsa_truststore:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.AttachmentProperty"
+    parameters:
+      minRequired: 0
+      secretPreserving: true
+    value: null
+    requireOverloading: true
+  nevisidm_database_host:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.HostPortProperty"
+    parameters:
+      minRequired: 0
+      maxAllowed: 2
+      portRequired: false
+    value: "172.188.1.103"
+    requireOverloading: true
+  nevisidm_database_tech_user_password:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
+    parameters:
+      minRequired: 0
+      maxAllowed: 1
+      secret: true
+    value: "sample password"
+    requireOverloading: true
+  nevisidm_encryption_key:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
+    parameters:
+      minRequired: 1
+      maxAllowed: 1
+      secret: true
+    value: "sample password"
+    requireOverloading: true
+  protected_address:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.URLProperty"
+    parameters:
+      minRequired: 1
+      schemeInputMode: "OPTIONAL"
+      allowedSchemes: "http,https"
+      hostNameInputMode: "REQUIRED"
+      portInputMode: "OPTIONAL"
+      pathInputMode: "OPTIONAL"
+    value: "https://hostname/path"
+    requireOverloading: true
+  protected_path:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.PathProperty"
+    parameters:
+      minRequired: 1
+    value: "/sample/"
+    requireOverloading: true

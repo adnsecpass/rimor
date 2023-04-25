@@ -1,0 +1,8 @@
+schemaVersion: "1.0"
+pattern:
+  id: "7623002513db8d275138dc22"
+  className: "ch.nevis.admin.v4.plugin.nevisauth.patterns2.SecToken"
+  name: "NEVIS SecToken"
+  properties:
+    keystore:
+    - "pattern://6768b463232f257c3bf273cf"

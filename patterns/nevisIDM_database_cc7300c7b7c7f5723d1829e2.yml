@@ -1,0 +1,8 @@
+schemaVersion: "1.0"
+pattern:
+  id: "cc7300c7b7c7f5723d1829e2"
+  className: "ch.nevis.admin.v4.plugin.nevisidm.patterns.NevisIDMDatabase"
+  name: "nevisIDM database"
+  properties:
+    hosts: "var://nevisidm_database_host"
+    password: "var://nevisidm_database_tech_user_password"

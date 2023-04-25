@@ -2,12 +2,17 @@ schemaVersion: "1.0"
 pattern:
   id: "5fb4396ee3a9aec180de9884"
   className: "ch.nevis.admin.v4.plugin.nevisproxy.patterns.WebApplicationAccess"
-  name: "Adnovum website"
+  name: "mock IC"
   properties:
     host:
     - "pattern://d1eb7b9e85f5814b6572d1f5"
-    path: "/adnovum-web/"
-    backends: "https://www.adnovum.com/"
+    path: "var://protected_path"
+    realm:
+    - "pattern://87a7b82e5cd902ae3f863289"
+    token:
+    - "pattern://7623002513db8d275138dc22"
+    backends: "var://protected_address"
     truststore:
     - "pattern://1a56ade8f09478f0eddb0f43"
     responseRewrite: "complete"
+    csrf: "off"

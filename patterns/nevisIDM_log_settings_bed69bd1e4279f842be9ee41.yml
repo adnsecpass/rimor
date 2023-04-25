@@ -1,0 +1,7 @@
+schemaVersion: "1.0"
+pattern:
+  id: "bed69bd1e4279f842be9ee41"
+  className: "ch.nevis.admin.v4.plugin.nevisidm.patterns.CustomNevisIDMLogFile"
+  name: "nevisIDM log settings"
+  properties:
+    logLevel: "INFO"
