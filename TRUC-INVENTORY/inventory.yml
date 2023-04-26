@@ -16,6 +16,7 @@ hosts:
 
 vars:
   __nevisadmin_pki_automatic_enabled: true
+  frontend_address: https://172.188.1.103
   # mock IC
   protected_address: https://f59414e5-1019-4acd-9233-7e5581f3c316.mock.pstmn.io/authorize/resource/
   protected_path: /authorize/resource/
@@ -33,3 +34,12 @@ vars:
     - inv-res://428220545603174d6332a5b64c9aec6d#key.pem
   nevis_sectoken_rsa_truststore:
     - inv-res://931ce9bd2d533b62e333929b466eb505#cert.pem
+  nevisfido_idm_tech_user_keystore:
+    - inv-res://438de63fec618b3715ab2be01b8c6327#cert.pem
+    - inv-res://1634a4e641eb32cfb23826463c8d0bb0#key.pem
+  nevisfido_idm_tech_user_truststore:
+    - inv-res://3225c1ba89bf16722091d9a8651fce67#cert.pem
+  nevisfido_db_tech_user:
+    - UFIDO
+  nevisfido_db_tech_user_password:
+    - secret://64374e6ea9a7318c46f32b16
