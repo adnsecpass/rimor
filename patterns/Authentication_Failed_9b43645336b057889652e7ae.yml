@@ -1,0 +1,7 @@
+schemaVersion: "1.0"
+pattern:
+  id: "9b43645336b057889652e7ae"
+  className: "ch.nevis.admin.v4.plugin.nevisauth.patterns2.AuthenticationFailed"
+  name: "Authentication Failed"
+  properties:
+    code: "401"

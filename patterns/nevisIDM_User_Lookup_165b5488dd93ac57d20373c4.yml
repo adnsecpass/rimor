@@ -1,0 +1,17 @@
+schemaVersion: "1.0"
+pattern:
+  id: "165b5488dd93ac57d20373c4"
+  className: "ch.nevis.admin.v4.plugin.nevisidm.patterns.NevisIDMUserLookup"
+  name: "nevisIDM User Lookup"
+  notes: "authentication mode is pass-through --> suppose to receive username through\
+    \ request parameter, not prompt for username (authentication mode)"
+  properties:
+    nevisIDM:
+    - "pattern://f6eef2f453247306197a7d53"
+    mode: "pass-through"
+    loginIdSource: "{inargs:username}"
+    onSuccess:
+    - "pattern://ff55c2db205b41be9e528ba4"
+    onUserNotFound:
+    - "pattern://9b43645336b057889652e7ae"
+    clientInput: "disabled"

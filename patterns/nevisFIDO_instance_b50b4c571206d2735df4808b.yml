@@ -9,8 +9,11 @@ pattern:
     logging:
     - "pattern://826897d4f7dcf0bcf5df1637"
     frontendAddress: "var://frontend_address"
+    signerTrustStore:
+    - "pattern://078e6645a04132d6c39c43d3"
     database:
     - "pattern://f895a1325ece82161ae68054"
+    firebaseServiceAccount: "var://nevisfido_firebase_credential"
     nevisidm:
     - "pattern://f6eef2f453247306197a7d53"
     backendKeyStore:

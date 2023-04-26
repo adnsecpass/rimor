@@ -33,6 +33,14 @@ variables:
       secretPreserving: true
     value: null
     requireOverloading: true
+  nevisfido_db_host:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.HostPortProperty"
+    parameters:
+      minRequired: 0
+      maxAllowed: 2
+      portRequired: false
+    value: "host:3306"
+    requireOverloading: true
   nevisfido_db_tech_user:
     className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
     parameters:
@@ -47,6 +55,14 @@ variables:
       maxAllowed: 1
       secret: true
     value: "sample password"
+    requireOverloading: true
+  nevisfido_firebase_credential:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.AttachmentProperty"
+    parameters:
+      minRequired: 0
+      maxAllowed: 1
+      secret: true
+    value: null
     requireOverloading: true
   nevisfido_idm_tech_user_keystore:
     className: "ch.nevis.admin.v4.plugin.base.generation.property.AttachmentProperty"

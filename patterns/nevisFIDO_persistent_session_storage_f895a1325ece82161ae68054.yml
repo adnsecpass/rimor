@@ -4,7 +4,7 @@ pattern:
   className: "ch.nevis.admin.v4.plugin.nevisfido.patterns.NevisFIDODatabase"
   name: "nevisFIDO persistent session storage"
   properties:
-    hosts: "localhost"
+    hosts: "var://nevisfido_db_host"
     schemaUser: "var://nevisfido_db_tech_user"
     schemaPassword: "var://nevisfido_db_tech_user_password"
     user: "var://nevisfido_db_tech_user"
