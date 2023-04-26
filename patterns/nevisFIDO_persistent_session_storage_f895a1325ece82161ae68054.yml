@@ -1,0 +1,11 @@
+schemaVersion: "1.0"
+pattern:
+  id: "f895a1325ece82161ae68054"
+  className: "ch.nevis.admin.v4.plugin.nevisfido.patterns.NevisFIDODatabase"
+  name: "nevisFIDO persistent session storage"
+  properties:
+    hosts: "localhost"
+    schemaUser: "var://nevisfido_db_tech_user"
+    schemaPassword: "var://nevisfido_db_tech_user_password"
+    user: "var://nevisfido_db_tech_user"
+    password: "var://nevisfido_db_tech_user_password"

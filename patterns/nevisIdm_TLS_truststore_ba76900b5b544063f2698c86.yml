@@ -1,0 +1,10 @@
+schemaVersion: "1.0"
+pattern:
+  id: "ba76900b5b544063f2698c86"
+  className: "ch.nevis.admin.v4.plugin.nevisproxy.patterns.AutomaticTrustStoreProvider"
+  name: "nevisIdm TLS truststore"
+  properties:
+    keystore:
+    - "pattern://563b1f1b6e6ecfc37f3d0404"
+    - "pattern://ec623936ad093d1db384f350"
+    truststoreFile: "var://nevisfido_idm_tech_user_truststore"

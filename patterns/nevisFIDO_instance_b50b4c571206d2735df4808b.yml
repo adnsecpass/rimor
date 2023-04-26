@@ -1,0 +1,17 @@
+schemaVersion: "1.0"
+pattern:
+  id: "b50b4c571206d2735df4808b"
+  className: "ch.nevis.admin.v4.plugin.nevisfido.deployable.patterns.NevisFIDODeployable"
+  name: "nevisFIDO instance"
+  deploymentHosts: "localhost"
+  properties:
+    instanceName: "demoFido"
+    logging:
+    - "pattern://826897d4f7dcf0bcf5df1637"
+    frontendAddress: "var://frontend_address"
+    database:
+    - "pattern://f895a1325ece82161ae68054"
+    nevisidm:
+    - "pattern://f6eef2f453247306197a7d53"
+    backendKeyStore:
+    - "pattern://eeafae2849e0d17254d21f38"

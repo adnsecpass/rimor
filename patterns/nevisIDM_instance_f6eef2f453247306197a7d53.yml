@@ -7,6 +7,8 @@ pattern:
   properties:
     instanceName: "demoIdm"
     encryptionKey: "var://nevisidm_encryption_key"
+    frontendTrustStore:
+    - "pattern://ba76900b5b544063f2698c86"
     authSignerTrustStore:
     - "pattern://078e6645a04132d6c39c43d3"
     database:

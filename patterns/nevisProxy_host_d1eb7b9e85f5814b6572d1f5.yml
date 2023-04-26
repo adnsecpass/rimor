@@ -6,5 +6,5 @@ pattern:
   properties:
     proxy:
     - "pattern://580e329346696ce9387c5d75"
-    addresses: "https://172.188.1.103"
+    addresses: "var://frontend_address"
     listen: "https://nomura-mfa-adn-dev1-truc:443"

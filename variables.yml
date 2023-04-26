@@ -1,5 +1,16 @@
 schemaVersion: "1.0"
 variables:
+  frontend_address:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.URLProperty"
+    parameters:
+      minRequired: 1
+      schemeInputMode: "REQUIRED"
+      allowedSchemes: "http,https"
+      hostNameInputMode: "REQUIRED"
+      portInputMode: "OPTIONAL"
+      pathInputMode: "OPTIONAL"
+    value: "https://172.188.1.103"
+    requireOverloading: true
   nevis_sectoken_private_enc_key:
     className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
     parameters:
@@ -20,6 +31,34 @@ variables:
     parameters:
       minRequired: 0
       secretPreserving: true
+    value: null
+    requireOverloading: true
+  nevisfido_db_tech_user:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
+    parameters:
+      minRequired: 0
+      maxAllowed: 1
+    value: null
+    requireOverloading: true
+  nevisfido_db_tech_user_password:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
+    parameters:
+      minRequired: 0
+      maxAllowed: 1
+      secret: true
+    value: "sample password"
+    requireOverloading: true
+  nevisfido_idm_tech_user_keystore:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.AttachmentProperty"
+    parameters:
+      minRequired: 0
+      secretPreserving: true
+    value: null
+    requireOverloading: true
+  nevisfido_idm_tech_user_truststore:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.AttachmentProperty"
+    parameters:
+      minRequired: 0
     value: null
     requireOverloading: true
   nevisidm_database_host:

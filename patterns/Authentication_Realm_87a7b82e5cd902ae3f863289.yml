@@ -10,6 +10,8 @@ pattern:
     - "pattern://7623002513db8d275138dc22"
     auth:
     - "pattern://41508ecd9dd7128bce703a71"
+    keyStore:
+    - "pattern://563b1f1b6e6ecfc37f3d0404"
     signerTrustStore:
     - "pattern://078e6645a04132d6c39c43d3"
     logrend:
