@@ -39,7 +39,7 @@ vars:
     - inv-res://1634a4e641eb32cfb23826463c8d0bb0#key.pem
   nevisfido_idm_tech_user_truststore:
     - inv-res://3225c1ba89bf16722091d9a8651fce67#cert.pem
-  nevisfido_db_tech_user:
-    - UFIDO
-  nevisfido_db_tech_user_password:
-    - secret://64374e6ea9a7318c46f32b16
+  nevisfido_db_host: localhost:3306
+  nevisfido_db_tech_user: UFIDO
+  nevisfido_db_tech_user_password: secret://64374e6ea9a7318c46f32b16
+  nevisfido_firebase_credential: inv-res://d8d649b0634d78b34312a637080cefec#service-account.json
