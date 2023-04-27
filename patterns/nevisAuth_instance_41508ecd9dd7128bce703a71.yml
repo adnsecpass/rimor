@@ -3,7 +3,7 @@ pattern:
   id: "41508ecd9dd7128bce703a71"
   className: "ch.nevis.admin.v4.plugin.nevisauth.patterns.NevisAuthDeployable"
   name: "nevisAuth instance"
-  deploymentHosts: "localhost"
+  deploymentHosts: "nevisauth"
   properties:
     instanceName: "demoAuth"
     logging:

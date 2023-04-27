@@ -3,7 +3,7 @@ pattern:
   id: "f6eef2f453247306197a7d53"
   className: "ch.nevis.admin.v4.plugin.nevisidm.patterns.NevisIDMDeployable"
   name: "nevisIDM instance"
-  deploymentHosts: "localhost"
+  deploymentHosts: "nevisidm"
   properties:
     instanceName: "demoIdm"
     encryptionKey: "var://nevisidm_encryption_key"

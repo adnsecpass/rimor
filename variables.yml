@@ -101,6 +101,28 @@ variables:
       secret: true
     value: "sample password"
     requireOverloading: true
+  nevisproxy_bindaddress:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.URLProperty"
+    parameters:
+      minRequired: 0
+      schemeInputMode: "REQUIRED"
+      allowedSchemes: "http,https"
+      hostNameInputMode: "REQUIRED"
+      portInputMode: "OPTIONAL"
+      pathInputMode: "OPTIONAL"
+    value: "https://nomura-mfa-adn-dev1-truc:443"
+    requireOverloading: true
+  nevisprxy_bindaddress:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.URLProperty"
+    parameters:
+      minRequired: 0
+      schemeInputMode: "REQUIRED"
+      allowedSchemes: "http,https"
+      hostNameInputMode: "REQUIRED"
+      portInputMode: "OPTIONAL"
+      pathInputMode: "OPTIONAL"
+    value: "https://nomura-mfa-adn-dev1-truc:443"
+    requireOverloading: true
   protected_address:
     className: "ch.nevis.admin.v4.plugin.base.generation.property.URLProperty"
     parameters:

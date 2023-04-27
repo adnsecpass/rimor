@@ -7,4 +7,4 @@ pattern:
     proxy:
     - "pattern://580e329346696ce9387c5d75"
     addresses: "var://frontend_address"
-    listen: "https://nomura-mfa-adn-dev1-truc:443"
+    listen: "var://nevisproxy_bindaddress"

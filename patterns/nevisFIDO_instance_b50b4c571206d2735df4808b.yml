@@ -3,7 +3,7 @@ pattern:
   id: "b50b4c571206d2735df4808b"
   className: "ch.nevis.admin.v4.plugin.nevisfido.deployable.patterns.NevisFIDODeployable"
   name: "nevisFIDO instance"
-  deploymentHosts: "localhost"
+  deploymentHosts: "nevisfido"
   properties:
     instanceName: "demoFido"
     logging:

@@ -3,7 +3,7 @@ pattern:
   id: "b80adb8fd1e8bfb7dac0b9d3"
   className: "ch.nevis.admin.v4.plugin.nevisauth.patterns.NevisLogrendDeployable"
   name: "nevisLogrend instance"
-  deploymentHosts: "localhost"
+  deploymentHosts: "nevislogrend"
   properties:
     port: "28988"
     instanceName: "demoLogrend"

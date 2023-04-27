@@ -3,7 +3,7 @@ pattern:
   id: "580e329346696ce9387c5d75"
   className: "ch.nevis.admin.v4.plugin.nevisproxy.patterns.NevisProxyDeployable"
   name: "nevisProxy instance"
-  deploymentHosts: "truc-vm"
+  deploymentHosts: "nevisproxy"
   properties:
     instanceName: "demo"
     logging:
