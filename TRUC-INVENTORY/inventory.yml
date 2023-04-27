@@ -1,26 +1,41 @@
 schemaVersion: 1
 
 hosts:
-- truc-vm:
-    vars:
-      __connection_host: 172.188.1.103
-      __connection_port: 22
-      __connection_user: azureuser
-      __connection_password: secret://47002f431b972df8c74df351
-- localhost:
+- nomura-truc-dev:
     vars:
       __connection_host: 172.188.1.103
       __connection_port: 22
       __connection_user: azureuser
       __connection_password: secret://47002f431b972df8c74df351
 
+groups:
+- nevisproxy:
+    members:
+      - nomura-truc-dev
+- nevisauth:
+    members:
+      - nomura-truc-dev
+- nevisidm:
+    members:
+      - nomura-truc-dev
+- nevislogrend:
+    members:
+      - nomura-truc-dev
+- nevisfido:
+    members:
+      - nomura-truc-dev
+- nevismeta:
+    members:
+      - nomura-truc-dev
+
 vars:
   __nevisadmin_pki_automatic_enabled: true
   frontend_address: https://172.188.1.103
+  nevisproxy_bindaddress: https://nomura-mfa-adn-dev1-truc:443
   # mock IC
   protected_address: https://f59414e5-1019-4acd-9233-7e5581f3c316.mock.pstmn.io/authorize/resource/
   protected_path: /authorize/resource/
-  nevisidm_database_host: localhost
+  nevisidm_database_host: localhost:3306
   nevisidm_encryption_key: secret://f91398a5d982c62d823ddc16
   nevisidm_database_tech_user_password: secret://31287015368d001ac2cf8606
   nevis_sectoken_private_enc_key: secret://564907d1498120d3817f9d6f
