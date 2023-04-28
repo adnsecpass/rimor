@@ -2,7 +2,8 @@ schemaVersion: "1.0"
 pattern:
   id: "f895a1325ece82161ae68054"
   className: "ch.nevis.admin.v4.plugin.nevisfido.patterns.NevisFIDODatabase"
-  name: "nevisFIDO persistent session storage"
+  name: "nevisFIDO db connector"
+  notes: "this is for nevisFIDO persistent storage"
   properties:
     hosts: "var://nevisfido_db_host"
     schemaUser: "var://nevisfido_db_tech_user"

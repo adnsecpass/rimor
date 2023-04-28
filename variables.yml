@@ -101,6 +101,30 @@ variables:
       secret: true
     value: "sample password"
     requireOverloading: true
+  nevismeta_db_host:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.HostPortProperty"
+    parameters:
+      minRequired: 0
+      maxAllowed: 2
+      portRequired: false
+    value: "host:8996"
+    requireOverloading: true
+  nevismeta_db_schema_user_password:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
+    parameters:
+      minRequired: 0
+      maxAllowed: 1
+      secret: true
+    value: "sample password"
+    requireOverloading: true
+  nevismeta_db_tech_user_password:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
+    parameters:
+      minRequired: 0
+      maxAllowed: 1
+      secret: true
+    value: "sample password"
+    requireOverloading: true
   nevisproxy_bindaddress:
     className: "ch.nevis.admin.v4.plugin.base.generation.property.URLProperty"
     parameters:

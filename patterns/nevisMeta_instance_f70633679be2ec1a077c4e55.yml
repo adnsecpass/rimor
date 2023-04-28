@@ -1,0 +1,14 @@
+schemaVersion: "1.0"
+pattern:
+  id: "f70633679be2ec1a077c4e55"
+  className: "ch.nevis.admin.v4.plugin.nevismeta.patterns.NevisMetaDeployable"
+  name: "nevisMeta instance"
+  deploymentHosts: "nevismeta"
+  properties:
+    instanceName: "demoMeta"
+    logging:
+    - "pattern://fd5af616a9d8c7579a2f0aa8"
+    database:
+    - "pattern://82ec9ba5ccd57a24066199ce"
+    authSignerTrustStore:
+    - "pattern://078e6645a04132d6c39c43d3"

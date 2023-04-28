@@ -1,0 +1,10 @@
+schemaVersion: "1.0"
+pattern:
+  id: "82ec9ba5ccd57a24066199ce"
+  className: "ch.nevis.admin.v4.plugin.nevismeta.patterns.NevisMetaDatabase"
+  name: "nevisMeta db connector"
+  properties:
+    hosts: "var://nevismeta_db_host"
+    schemaPassword: "var://nevismeta_db_schema_user_password"
+    password: "var://nevismeta_db_tech_user_password"
+    encryption: "disabled"
