@@ -59,3 +59,6 @@ vars:
   nevisfido_db_tech_user: UFIDO
   nevisfido_db_tech_user_password: secret://64374e6ea9a7318c46f32b16
   nevisfido_firebase_credential: inv-res://d8d649b0634d78b34312a637080cefec#service-account.json
+  nevismeta_db_host: localhost:3306
+  nevismeta_db_schema_user_password: secret://8d9be70e2389decb47bd60f6
+  nevismeta_db_tech_user_password: secret://7191844709bfe5e2c5f84d1d
