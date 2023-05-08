@@ -7,7 +7,11 @@ pattern:
     filters: "<filter-mapping>\n\t<filter-name>SessionHandler_OIDC_username_password_login_realm</filter-name>\n\
       \t<url-pattern>/oauth/authorize</url-pattern>\n</filter-mapping>\n<filter-mapping>\n\
       \t<filter-name>SessionHandler_OIDC_username_password_login_realm</filter-name>\n\
-      \t<url-pattern>/oauth/token</url-pattern>\n</filter-mapping>"
+      \t<url-pattern>/oauth/token</url-pattern>\n</filter-mapping>\n<filter-mapping>\n\
+      \        <filter-name>Authentication_OIDC_username_password_login_realm</filter-name>\n\
+      \        <url-pattern>/oauth/authorize</url-pattern>\n</filter-mapping>\n<filter-mapping>\n\
+      \        <filter-name>Authentication_OIDC_username_password_login_realm</filter-name>\n\
+      \        <url-pattern>/oauth/token</url-pattern>\n</filter-mapping>"
     servlets: "<servlet>\n\t<servlet-name>OIDC_IdP_Connector</servlet-name>\n\t<servlet-class>ch::nevis::isiweb4::servlet::connector::http::HttpsConnectorServlet</servlet-class>\n\
       \t<init-param>\n\t\t<param-name>InetAddress</param-name>\n\t\t<param-value>nomura-truc-dev:8991</param-value>\n\
       \t</init-param>\n\t<init-param>\n\t\t<param-name>MappingType</param-name>\n\t\
