@@ -1,0 +1,27 @@
+schemaVersion: "1.0"
+pattern:
+  id: "9ca4f1d656d3bd4205045f9f"
+  className: "ch.nevis.admin.v4.plugin.nevisproxy.patterns.GenericServiceSettings"
+  name: "OIDC IdP Https Connector"
+  properties:
+    filters: "<filter-mapping>\n\t<filter-name>SessionHandler_OIDC_username_password_login_realm</filter-name>\n\
+      \t<url-pattern>/oauth/authorize</url-pattern>\n</filter-mapping>\n<filter-mapping>\n\
+      \t<filter-name>SessionHandler_OIDC_username_password_login_realm</filter-name>\n\
+      \t<url-pattern>/oauth/token</url-pattern>\n</filter-mapping>"
+    servlets: "<servlet>\n\t<servlet-name>OIDC_IdP_Connector</servlet-name>\n\t<servlet-class>ch::nevis::isiweb4::servlet::connector::http::HttpsConnectorServlet</servlet-class>\n\
+      \t<init-param>\n\t\t<param-name>InetAddress</param-name>\n\t\t<param-value>nomura-truc-dev:8991</param-value>\n\
+      \t</init-param>\n\t<init-param>\n\t\t<param-name>MappingType</param-name>\n\t\
+      \t<param-value>requesturi</param-value>\n\t</init-param>\n\t<init-param>\n\t\
+      \t<param-name>RequestTimeout</param-name>\n\t\t<param-value>90000</param-value>\n\
+      \t</init-param>\n\t<init-param>\n\t\t<param-name>ResourceManager.RetryTimeout</param-name>\n\
+      \t\t<param-value>2</param-value>\n\t</init-param>\n\t<init-param>\n\t\t<param-name>SSLCACertificateFile</param-name>\
+      \            \n\t\t<param-value>/var/opt/keys/trust/oidc-username-password-login-realm-tls-trust/truststore.pem</param-value>\n\
+      \t</init-param>\n\t<init-param>\n\t\t<param-name>SSLCheckPeerHostname</param-name>\n\
+      \t\t<param-value>false</param-value>\n\t</init-param>\n\t<init-param>\n\t\t\
+      <param-name>SSLClientCertificateFile</param-name>\n\t\t<param-value>/var/opt/keys/own/nevisproxy-outbound-tls-keystore/cert.pem</param-value>\n\
+      \t</init-param>\n\t<init-param>\n\t\t<param-name>SSLClientKeyFile</param-name>\n\
+      \t\t<param-value>/var/opt/keys/own/nevisproxy-outbound-tls-keystore/key_pkcs8.pem</param-value>\n\
+      \t</init-param>\n</servlet>\n\n<servlet-mapping>\n        <servlet-name>OIDC_IdP_Connector</servlet-name>\n\
+      \        <url-pattern>/oauth/authorize</url-pattern>\n</servlet-mapping>\n<servlet-mapping>\n\
+      \        <servlet-name>OIDC_IdP_Connector</servlet-name>\n        <url-pattern>/oauth/token</url-pattern>\n\
+      </servlet-mapping>\n\n"

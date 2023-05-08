@@ -1,0 +1,12 @@
+schemaVersion: "1.0"
+pattern:
+  id: "4936d7886ed9188d53aed28d"
+  className: "ch.nevis.admin.v4.plugin.nevisauth.patterns2.GenericAuthenticationStep"
+  name: "OAuth Authorization Server AuthState"
+  properties:
+    authStatesFile: "res://4936d7886ed9188d53aed28d#authStatesFile"
+    parameters: "meta: localhost\nsetup_id: '00000000000000000000000000000000'"
+    onFailure:
+    - "pattern://9b43645336b057889652e7ae"
+    nextSteps:
+    - "pattern://1fabaa00cd385a57f42d658e"

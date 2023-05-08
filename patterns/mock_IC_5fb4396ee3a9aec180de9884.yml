@@ -8,9 +8,11 @@ pattern:
     - "pattern://d1eb7b9e85f5814b6572d1f5"
     path: "var://protected_path"
     realm:
-    - "pattern://87a7b82e5cd902ae3f863289"
+    - "pattern://2b6f9a0eb4f4b11f2e84167b"
     token:
-    - "pattern://7623002513db8d275138dc22"
+    - "pattern://208de9aa0a6dca4816c5f0bc"
+    addons:
+    - "pattern://9ca4f1d656d3bd4205045f9f"
     backends: "var://protected_address"
     truststore:
     - "pattern://1a56ade8f09478f0eddb0f43"

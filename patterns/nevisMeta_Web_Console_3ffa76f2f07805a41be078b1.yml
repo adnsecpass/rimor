@@ -1,0 +1,14 @@
+schemaVersion: "1.0"
+pattern:
+  id: "3ffa76f2f07805a41be078b1"
+  className: "ch.nevis.admin.v4.plugin.nevismeta.patterns.NevisMetaWebApplicationAccess"
+  name: "nevisMeta Web Console"
+  properties:
+    meta:
+    - "pattern://f70633679be2ec1a077c4e55"
+    host:
+    - "pattern://d1eb7b9e85f5814b6572d1f5"
+    realm:
+    - "pattern://87a7b82e5cd902ae3f863289"
+    token:
+    - "pattern://7623002513db8d275138dc22"

@@ -1,0 +1,18 @@
+schemaVersion: "1.0"
+pattern:
+  id: "87a7b82e5cd902ae3f863289"
+  className: "ch.nevis.admin.v4.plugin.nevisauth.patterns2.NevisAuthRealm"
+  name: "Admin realm"
+  properties:
+    authenticate:
+    - "pattern://1fabaa00cd385a57f42d658e"
+    tokens:
+    - "pattern://7623002513db8d275138dc22"
+    auth:
+    - "pattern://41508ecd9dd7128bce703a71"
+    keyStore:
+    - "pattern://563b1f1b6e6ecfc37f3d0404"
+    signerTrustStore:
+    - "pattern://078e6645a04132d6c39c43d3"
+    logrend:
+    - "pattern://b80adb8fd1e8bfb7dac0b9d3"

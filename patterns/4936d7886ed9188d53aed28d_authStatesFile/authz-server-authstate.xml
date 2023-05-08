@@ -1,0 +1,13 @@
+<AuthState name="${state.entry}" class="ch.nevis.esauth.auth.states.oauth2.AuthorizationServer" final="false">
+ <ResultCond name="authenticate:valid-authorization-request" next="${state.exit.1}"/> <!-- execute the first assigned Additional Follow-Up Step -->
+ <ResultCond name="invalid-authorization-request" next="${state.failed}"/>
+ <ResultCond name="invalid-client" next="${state.failed}"/>
+ <ResultCond name="invalid-redirect-uri" next="${state.failed}"/>
+ <ResultCond name="invalid-token-request" next="${state.failed}"/>
+ <ResultCond name="server-error" next="${state.failed}"/>
+ <ResultCond name="stepup:valid-authorization-request" next="${state.done}"/>
+ <property name="keyobjectref" value="DefaultSigner"/>
+ <property name="keystoreref" value="DefaultKeyStore"/>
+ <property name="dataSource" value="nevismeta"/>
+ <property name="nevismeta.location" value="https://${param.meta}:8996/nevismeta/rest/modules/oauthv2/setups/Setup_${param.setup_id}/entities"/>
+</AuthState>
