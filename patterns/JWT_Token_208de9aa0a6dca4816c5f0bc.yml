@@ -1,7 +1,0 @@
-schemaVersion: "1.0"
-pattern:
-  id: "208de9aa0a6dca4816c5f0bc"
-  className: "ch.nevis.admin.v4.plugin.nevisauth.patterns2.JWTToken"
-  name: "JWT Token"
-  properties:
-    secret: "var://jwt_token_secret"
