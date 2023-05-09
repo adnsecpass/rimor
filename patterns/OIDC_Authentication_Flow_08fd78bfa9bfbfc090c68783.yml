@@ -1,0 +1,13 @@
+schemaVersion: "1.0"
+pattern:
+  id: "08fd78bfa9bfbfc090c68783"
+  className: "ch.nevis.admin.v4.plugin.nevisauth.patterns.AuthenticationFlow"
+  name: "OIDC Authentication Flow"
+  properties:
+    host:
+    - "pattern://d1eb7b9e85f5814b6572d1f5"
+    path: "/oidc/"
+    realm:
+    - "pattern://87a7b82e5cd902ae3f863289"
+    flow:
+    - "pattern://4936d7886ed9188d53aed28d"

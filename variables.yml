@@ -151,12 +151,6 @@ variables:
       maxAllowed: 1
     value: "/authorize/"
     requireOverloading: true
-  oidc_token_endpoint_path:
-    className: "ch.nevis.admin.v4.plugin.base.generation.property.PathProperty"
-    parameters:
-      minRequired: 1
-    value: "/oauth/token/"
-    requireOverloading: true
   protected_address:
     className: "ch.nevis.admin.v4.plugin.base.generation.property.URLProperty"
     parameters:
