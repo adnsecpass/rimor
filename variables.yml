@@ -11,13 +11,11 @@ variables:
       pathInputMode: "OPTIONAL"
     value: "https://172.188.1.103"
     requireOverloading: true
-  jwt_token_secret:
-    className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
+  frontend_oidc_path:
+    className: "ch.nevis.admin.v4.plugin.base.generation.property.PathProperty"
     parameters:
-      minRequired: 0
-      maxAllowed: 1
-      secret: true
-    value: "this-is-a-super-super-super-long-and-secret-secret"
+      minRequired: 1
+    value: "/oidc/"
     requireOverloading: true
   nevis_sectoken_private_enc_key:
     className: "ch.nevis.admin.v4.plugin.base.generation.property.SimpleTextProperty"
@@ -143,28 +141,4 @@ variables:
       portInputMode: "OPTIONAL"
       pathInputMode: "OPTIONAL"
     value: "https://nomura-mfa-adn-dev1-truc:443"
-    requireOverloading: true
-  oidc_authorize_endpoint_path:
-    className: "ch.nevis.admin.v4.plugin.base.generation.property.PathProperty"
-    parameters:
-      minRequired: 1
-      maxAllowed: 1
-    value: "/authorize/"
-    requireOverloading: true
-  protected_address:
-    className: "ch.nevis.admin.v4.plugin.base.generation.property.URLProperty"
-    parameters:
-      minRequired: 1
-      schemeInputMode: "OPTIONAL"
-      allowedSchemes: "http,https"
-      hostNameInputMode: "REQUIRED"
-      portInputMode: "OPTIONAL"
-      pathInputMode: "OPTIONAL"
-    value: "https://hostname/path"
-    requireOverloading: true
-  protected_path:
-    className: "ch.nevis.admin.v4.plugin.base.generation.property.PathProperty"
-    parameters:
-      minRequired: 1
-    value: "/sample/"
     requireOverloading: true

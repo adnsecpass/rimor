@@ -1,7 +1,0 @@
-schemaVersion: "1.0"
-pattern:
-  id: "1a56ade8f09478f0eddb0f43"
-  className: "ch.nevis.admin.v4.plugin.nevisproxy.patterns.PemTrustStoreProvider"
-  name: "protected host CA certificate"
-  properties:
-    truststoreFile: "res://1a56ade8f09478f0eddb0f43#truststoreFile"
