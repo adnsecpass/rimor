@@ -30,12 +30,10 @@ groups:
 
 vars:
   __nevisadmin_pki_automatic_enabled: true
-  frontend_address: https://172.188.1.103
+  frontend_address: https://nomura-truc-dev-vm.southeastasia.cloudapp.azure.com
+  frontend_oidc_path: /oidc/
   # the hostname nomura-mfa-adn-dev1-truc is bind to eth0 interface (subnet IP address: 10.7.0.6) on my machine 
   nevisproxy_bindaddress: https://nomura-mfa-adn-dev1-truc:443
-  # mock IC
-  protected_address: https://f59414e5-1019-4acd-9233-7e5581f3c316.mock.pstmn.io/authorize/resource/
-  protected_path: /authorize/resource/
   nevisidm_database_host: localhost:3306
   nevisidm_encryption_key: secret://f91398a5d982c62d823ddc16
   nevisidm_database_tech_user_password: secret://31287015368d001ac2cf8606
