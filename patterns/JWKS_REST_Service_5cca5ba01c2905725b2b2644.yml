@@ -1,0 +1,9 @@
+schemaVersion: "1.0"
+pattern:
+  id: "5cca5ba01c2905725b2b2644"
+  className: "ch.nevis.admin.v4.plugin.nevisauth.patterns.GenericAuthRestService"
+  name: "JWKS REST Service"
+  properties:
+    auth:
+    - "pattern://41508ecd9dd7128bce703a71"
+    configFile: "res://5cca5ba01c2905725b2b2644#configFile"

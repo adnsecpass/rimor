@@ -11,3 +11,5 @@ pattern:
     - "pattern://87a7b82e5cd902ae3f863289"
     flow:
     - "pattern://4936d7886ed9188d53aed28d"
+    addons:
+    - "pattern://398a004a28333d02d01bb773"

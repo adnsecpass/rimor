@@ -16,3 +16,4 @@ pattern:
     - "pattern://078e6645a04132d6c39c43d3"
     logrend:
     - "pattern://b80adb8fd1e8bfb7dac0b9d3"
+    template: "res://87a7b82e5cd902ae3f863289#template"

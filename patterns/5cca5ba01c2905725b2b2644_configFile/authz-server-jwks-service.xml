@@ -1,0 +1,3 @@
+<RESTService name="jwks" class="ch.nevis.esauth.rest.service.jsonwebkey.JWKSService" path="/.well-known/keys">
+ <property name="authstates" value="Admin_realm_OIDC_IdP_AuthState"/>
+</RESTService>
