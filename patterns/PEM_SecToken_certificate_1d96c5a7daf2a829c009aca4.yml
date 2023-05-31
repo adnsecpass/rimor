@@ -1,0 +1,7 @@
+schemaVersion: "1.0"
+pattern:
+  id: "1d96c5a7daf2a829c009aca4"
+  className: "ch.nevis.admin.v4.plugin.nevisproxy.patterns.PemTrustStoreProvider"
+  name: "PEM SecToken certificate"
+  properties:
+    truststoreFile: "res://1d96c5a7daf2a829c009aca4#truststoreFile"

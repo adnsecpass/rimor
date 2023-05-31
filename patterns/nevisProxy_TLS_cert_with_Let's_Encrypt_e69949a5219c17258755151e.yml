@@ -1,0 +1,7 @@
+schemaVersion: "1.0"
+pattern:
+  id: "e69949a5219c17258755151e"
+  className: "ch.nevis.admin.v4.plugin.nevisproxy.patterns.PemKeyStoreProvider"
+  name: "nevisProxy TLS cert with Let's Encrypt"
+  properties:
+    keystoreFiles: "res://e69949a5219c17258755151e#keystoreFiles"

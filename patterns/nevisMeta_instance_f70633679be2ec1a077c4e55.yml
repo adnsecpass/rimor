@@ -11,4 +11,4 @@ pattern:
     database:
     - "pattern://82ec9ba5ccd57a24066199ce"
     authSignerTrustStore:
-    - "pattern://078e6645a04132d6c39c43d3"
+    - "pattern://1d96c5a7daf2a829c009aca4"

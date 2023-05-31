@@ -13,7 +13,7 @@ pattern:
     keyStore:
     - "pattern://563b1f1b6e6ecfc37f3d0404"
     signerTrustStore:
-    - "pattern://078e6645a04132d6c39c43d3"
+    - "pattern://1d96c5a7daf2a829c009aca4"
     logrend:
     - "pattern://b80adb8fd1e8bfb7dac0b9d3"
     template: "res://87a7b82e5cd902ae3f863289#template"

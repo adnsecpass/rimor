@@ -8,3 +8,5 @@ pattern:
     - "pattern://580e329346696ce9387c5d75"
     addresses: "var://frontend_address"
     listen: "var://nevisproxy_bindaddress"
+    keystore:
+    - "pattern://e69949a5219c17258755151e"

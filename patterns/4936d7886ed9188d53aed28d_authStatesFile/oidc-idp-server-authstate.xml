@@ -13,5 +13,5 @@
  <property name="encryptAccessToken" value="false"/>
  <property name="openid.support" value="true" />
  <property name="openid.issuerId" value="nomura-mfa-dev" />
- <property name="openid.claim.username" value="${sess:ch.nevis.idm.User.loginId}"/>
+ <property name="openid.claim.email" value="${sess:ch.nevis.idm.User.loginId}"/>
 </AuthState>

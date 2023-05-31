@@ -10,7 +10,7 @@ pattern:
     - "pattern://826897d4f7dcf0bcf5df1637"
     frontendAddress: "var://frontend_address"
     signerTrustStore:
-    - "pattern://078e6645a04132d6c39c43d3"
+    - "pattern://1d96c5a7daf2a829c009aca4"
     database:
     - "pattern://f895a1325ece82161ae68054"
     firebaseServiceAccount: "var://nevisfido_firebase_credential"
